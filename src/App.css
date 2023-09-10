@@ -1,50 +1,7 @@
-.App {
-  text-align: center;
-  font-family: 'Arial', sans-serif;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-resources {
-  margin-top: 2rem;
-}
-
-.App-resources h2 {
-  border-bottom: 2px solid #61dafb;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-.App-resources ul {
-  text-align: left;
-  display: inline-block;
-}
-
-.App-link {
-  color: #61dafb;
-  text-decoration: none;
-  font-size: 1.2rem;
-  margin-top: 2rem;
-  padding: 0.5rem 1rem;
-  border: 2px solid #61dafb;
-  border-radius: 3px;
-}
-
-.App-link:hover {
-  background-color: #61dafb;
-  color: #282c34;
-  transition: 0.3s;
-}
-
-.App-footer {
-  margin-top: 3rem;
+  padding: 20px;
+  gap: 16px; /* Gap between each card. */
 }
