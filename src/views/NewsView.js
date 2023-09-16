@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from '../components/header/Header';
 
 function NewsView() {
   return (
     <div>
-        <p>News View</p>
+      <Header title='News' />
     </div>
   );
 }

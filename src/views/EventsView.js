@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from '../components/header/Header';
 
 function EventsView() {
   return (
     <div>
-        <p>Events View</p>
+      <Header title='Events' />
     </div>
   );
 }
