@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #343a40; /* Dark grey */
+  height: 4rem;
+  max-height: 4rem;
+}
+
+.nav-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #f8f9fa; /* Light grey */
+  font-size: 18px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #495057; /* Brighter grey on hover */
+}
