@@ -1,12 +1,15 @@
+// src/views/RacesView.js
 import React from 'react';
-import Header from '../components/header/Header';
+import { alienRaces } from '../data/alienRaces';
+import Carousel from '../components/carousel/Carousel';
 
-function RacesView() {
+const RacesView = () => {
   return (
     <div>
-      <Header title='Races' />
+      <h1>Alien Races</h1>
+      <Carousel data={alienRaces} />
     </div>
   );
-}
+};
 
 export default RacesView;
