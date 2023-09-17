@@ -1,12 +1,14 @@
+// src/components/NewsView.js
 import React from 'react';
-import Header from '../components/header/Header';
+import { alienRaces } from '../data/alienRaces';
+import AlienCard from '../components/card/AlienCard';
 
-function NewsView() {
-  return (
-    <div>
-      <Header title='News' />
-    </div>
-  );
-}
+const NewsView = () => (
+  <div className="news-view">
+    {alienRaces.map((alien, index) => (
+      <AlienCard key={index} alien={alien} />
+    ))}
+  </div>
+);
 
-export default NewsView
+export default NewsView;
