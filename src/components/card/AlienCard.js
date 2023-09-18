@@ -2,15 +2,13 @@
 import React from 'react';
 import './AlienCard.css';
 
-const AlienCard = ({ alien }) => (
+const AlienCard = ({ image, title, content, author, country }) => (
   <div className="alien-card">
-    <img src={alien.image} alt={alien.name} />
-    <h2>{alien.name}</h2>
-    <p>{alien.description}</p>
-    <p>Origen: {alien.origin}</p>
-    <p>Población: {alien.population}</p>
-    <p>Hostilidad: {alien.hostility}</p>
-    <p>Objetivo: {alien.objective}</p>
+    <img src={image} alt={title} />
+    <h2>{title}</h2>
+    <span>{content}</span>    
+    <p>{author}</p>
+<p>{country}</p>
   </div>
 );
 
