@@ -5,3 +5,6 @@
   padding: 20px;
   gap: 16px; /* Gap between each card. */
 }
+body {
+  background-color: black;
+}
