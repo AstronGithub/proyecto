@@ -1,4 +1,5 @@
 .alien-card {
+  position: relative;
   border: 1px solid #ccc;
   margin: 10px;
   padding: 10px;
@@ -28,8 +29,10 @@
   margin: 5px 0;
   color: #750000;
 }
-.alien-card {
-  background-color: rgb(10, 10, 44);
-  backdrop-filter: start;
-  color: rgb(44, 44, 44);
+
+.view-more {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.8em; /* Esto hace que el texto del botón sea más pequeño */
 }
