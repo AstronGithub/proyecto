@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navigationbar/Navbar'
 import './App.css';
-import NewsView from './views/NewsView';
-import RacesView from './views/RacesView';
-import EventsView from './views/EventsView';
+import NewsView from './views/news-view/NewsView';
+import RacesView from './views/races-view/RacesView';
+import EventsView from './views/event-view/EventsView';
 
 function App() {
   return (

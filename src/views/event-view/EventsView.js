@@ -1,6 +1,6 @@
 // Importing necessary libraries and components
 import React from 'react';
-import Header from '../components/header/Header';
+import Header from '../../components/header/Header';
 
 // Function component for EventsView
 function EventsView() {

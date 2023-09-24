@@ -1,9 +1,9 @@
 // src/components/NewsView.js
 import React from 'react';
-import { alienNews } from '../data/alienNews';
-import AlienCard from '../components/card/AlienCard';
+import { alienNews } from '../../data/alienNews';
+import AlienCard from '../../components/card/AlienCard';
 import "./NewsView.css"
-import Header from "../components/header/Header"
+import Header from "../../components/header/Header"
 
 const NewsView = () => (
   <div className="news-view">
