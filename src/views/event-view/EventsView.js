@@ -7,7 +7,7 @@ function EventsView() {
   // Returns a JSX element
   return (
     <div>
-      <Header title='Events' />
+      <Header title='Prueba' />
     </div>
   );
 }
