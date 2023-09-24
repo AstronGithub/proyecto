@@ -1,74 +1,93 @@
 /* src/components/Carousel.css */
 .carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 400px;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .carousel-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 80%;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .carousel-content img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .carousel-content h2,
-  .carousel-content p {
-    color: white;
-    background-color: transparent;
-  }
-  
-  .carousel button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .carousel button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .carousel button:active {
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-  
-  .carousel button:nth-child(1) {
-    left: 10px;
-  }
-  
-  .carousel button:nth-child(3) {
-    right: 10px;
-  }
-  
-  .carousel-content h3 {
-    margin: 10px 0;
-    font-size: 20px;
-    color: white;
-  }
-  
-  .carousel-content span {
-    font-size: 14px;
-    color: white;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+}
+
+.carousel-image {
+  width: 50%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-info {
+  width: 50%;
+  padding: 20px;
+}
+
+.carousel-info h1 {
+  margin-bottom: 35px;
+text-align: center;
+  text-decoration: underline; /* Underline the text */
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.carousel-info p {
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.prev-button {
+  /* Add your styles for the Previous button here */
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.prev-button:hover {
+  box-shadow: 0 0 20px black; /* Add this line */
+}
+
+.next-button {
+  /* Add your styles for the Next button here */
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.next-button:hover {
+  box-shadow: 0 0 20px black
+}
+
+.carousel-info ul {
+  list-style-type: square; /* Change the bullet point style */
+  padding-left: 15px; /* Add some space before the bullet points */
+}
+
+.info-label {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.high-hostility {
+  color: black;
+  background-color: rgba(255, 0, 0, 0.5);
+}
