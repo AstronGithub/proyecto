@@ -7,7 +7,6 @@ function EventsView() {
   // Returns a JSX element
   return (
     <div>
-      " Header component with title prop set to 'Events' "
       <Header title='Events' />
     </div>
   );
