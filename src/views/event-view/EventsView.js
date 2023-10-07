@@ -1,16 +1,19 @@
-// Importing necessary libraries and components
+// src/views/EventsView.js
 import React from 'react';
-import Header from '../../components/header/Header';
+import AlienCard from '../../components/card/AlienCard';
+import { alienEvents } from '../../data/alienEvents';
 
-// Function component for EventsView
-function EventsView() {
-  // Returns a JSX element
+const EventsView = () => {
   return (
     <div>
-      <Header title='Prueba' />
+      <h1>Events View</h1>
+      <div className="cards-container">
+        {alienEvents.map((event, index) => (
+          <AlienCard key={index} title={event.name} content={event.description} {...event} size='large' />
+        ))}
+      </div>
     </div>
   );
-}
+};
 
-// Exporting the EventsView component for use in other files
 export default EventsView;

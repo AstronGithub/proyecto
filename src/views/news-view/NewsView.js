@@ -23,7 +23,7 @@ const NewsView = () => (
           title={alien.title} 
           content={shortenedContent} // Usa el contenido acortado
           author={alien.author} 
-          country={alien.country} 
+          location={alien.country} 
           className="alien-card" // Asegúrate de que cada tarjeta tenga esta clase
         />
       );

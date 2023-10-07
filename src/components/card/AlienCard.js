@@ -2,7 +2,7 @@
 import React from 'react';
 import './AlienCard.css';
 
-const AlienCard = ({ image, title, content, author, country, size = 'small' }) => {
+const AlienCard = ({ image, title, expectedAttendance, objective, content, author, location, size = 'small' }) => {
   const cardSize = {
     small: '200px',
     medium: '350px',
@@ -19,7 +19,9 @@ const AlienCard = ({ image, title, content, author, country, size = 'small' }) =
       <h2>{title}</h2>
       <span>{content}</span>    
       <p>{author}</p>
-      <p>{country}</p>
+      <p>{location}</p>
+      <p>{expectedAttendance}</p>
+      <span>{objective}</span>
       <button className="view-more">View More ...</button>
     </div>
   );
