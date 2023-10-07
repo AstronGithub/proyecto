@@ -1,0 +1,15 @@
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 10px; /* Añade un padding a los lados para evitar que las tarjetas toquen los bordes de la pantalla */
+    box-sizing: border-box;
+    
+   /* Asegura que el padding y el border no aumenten el tamaño del contenedor */
+  }
+  
+  .alien-card {
+    /* ...otros estilos... */
+    margin: 10px; /* Añade un margen alrededor de cada tarjeta */
+    max-width: calc(100% - 20px); /* Asegura que la tarjeta no sea más ancha que su contenedor, teniendo en cuenta el margen */
+  }

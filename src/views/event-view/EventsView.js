@@ -1,13 +1,17 @@
 // src/views/EventsView.js
 import React from 'react';
-import Cartas from '../../components/cartas/Cartas';
+import AlienCard from '../../components/card/AlienCard';
 import { alienEvents } from '../../data/alienEvents';
 
 const EventsView = () => {
   return (
     <div>
       <h1>Events View</h1>
-      <Cartas data={alienEvents} size="medium" />
+      <div className="cards-container">
+        {alienEvents.map((event, index) => (
+          <AlienCard key={index} title={event.name} content={event.description} {...event} size='large' />
+        ))}
+      </div>
     </div>
   );
 };

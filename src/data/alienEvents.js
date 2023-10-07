@@ -9,7 +9,7 @@ export const alienEvents = [
     },
     {
         image: "https://media-cldnry.s-nbcnews.com/image/upload/t_focal-760x428,f_auto,q_auto:best/mpx/2704722219/2023_05/1685574468972_nn_mal_nasa_ufo_findings_230531_1920x1080-ms1ye7.jpg",
-        name: "https://s.abcnews.com/images/Technology/GTY_ellen_stofan_kab_150408_16x9_1600.jpg",
+        name: "Bertellotti",
         description: "A worldwide conference inviting scientists, researchers, and enthusiasts from around the world to discuss the most recent UFO sightings, theories, and potential evidence of extraterrestrial life.",
         location: "Paris, France at the International Space Center",
         expectedAttendance: "Over 10,000 attendees from all continents, including renowned scientists and researchers.",
