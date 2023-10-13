@@ -14,6 +14,9 @@ function Navbar() {
       <div className='nav-item'>
         <Link to='/events'>Events</Link>
       </div>
+      <div className='nav-item'>
+        <Link to="/stories">Stories</Link>
+      </div>
     </nav>
   );
 }

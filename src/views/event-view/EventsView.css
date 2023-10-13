@@ -10,6 +10,11 @@
   
   .alien-card {
     /* ...otros estilos... */
-    margin: 10px; /* Añade un margen alrededor de cada tarjeta */
-    max-width: calc(100% - 20px); /* Asegura que la tarjeta no sea más ancha que su contenedor, teniendo en cuenta el margen */
-  }
+    margin: 20px 0; /* Adds a margin around each card */
+    max-width: calc(100% - 20px); /* Ensures that the card is not wider than its container, taking into account the margin */
+    transition: transform 0.3s ease; /* Adds a smooth transition effect when the card size changes */
+}
+
+.alien-card:hover {
+    transform: scale(1.05); /* Increases the size of the card when hovered over */
+}

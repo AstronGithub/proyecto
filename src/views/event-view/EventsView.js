@@ -2,6 +2,7 @@
 import React from 'react';
 import AlienCard from '../../components/card/AlienCard';
 import { alienEvents } from '../../data/alienEvents';
+import './EventsView.css';
 
 const EventsView = () => {
   return (

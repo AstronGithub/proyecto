@@ -2,7 +2,7 @@
 import React from 'react';
 import './AlienCard.css';
 
-const AlienCard = ({ image, title, expectedAttendance, objective, content, author, location, size = 'small' }) => {
+const AlienCard = ({ image, title, expectedAttendance, objective, content, author, location, size = 'small', onClick, showButton }) => {
   const cardSize = {
     small: '200px',
     medium: '350px',
@@ -22,7 +22,7 @@ const AlienCard = ({ image, title, expectedAttendance, objective, content, autho
       <p>{location}</p>
       <p>{expectedAttendance}</p>
       <span>{objective}</span>
-      <button className="view-more">View More ...</button>
+      {showButton && <button className="view-more" onClick={onClick}>View More ...</button>}
     </div>
   );
 };

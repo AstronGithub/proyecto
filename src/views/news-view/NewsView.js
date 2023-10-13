@@ -1,15 +1,16 @@
-// src/components/NewsView.js
+// NewsView.js
 import React from 'react';
 import { alienNews } from '../../data/alienNews';
+import { useNavigate } from 'react-router-dom';
 import AlienCard from '../../components/card/AlienCard';
 import "./NewsView.css"
 import Header from "../../components/header/Header"
 
-const NewsView = () => (
-  <div className="news-view">
-    <Header title="NEWS"/>
-    <div className="grid-container">
-    {alienNews.map((alien, index) => {
+const NewsView = () => {
+  const navigate = useNavigate();
+
+  const renderAlienCards = () => {
+    return alienNews.map((alien, index) => {
       // Elimina los espacios adicionales y los saltos de línea, luego divide el contenido en palabras
       let words = alien.content.replace(/\s+/g, ' ').trim().split(' ');
 
@@ -24,12 +25,22 @@ const NewsView = () => (
           content={shortenedContent} // Usa el contenido acortado
           author={alien.author} 
           location={alien.country} 
-          className="alien-card" // Asegúrate de que cada tarjeta tenga esta clase
+          className="alien-card"
+          onClick={() => navigate(`/singularNewsView/${alien.id}`)}
+          showButton  
         />
       );
-    })}
-  </div>
-  </div>
-);
+    });
+  };
+
+  return (
+    <div className="news-view">
+      <Header title="NEWS"/>
+      <div className="grid-container">
+        {renderAlienCards()}
+      </div>
+    </div>
+  );
+};
 
 export default NewsView;

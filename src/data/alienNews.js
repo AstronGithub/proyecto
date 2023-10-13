@@ -1,5 +1,6 @@
 export const alienNews = [
     {
+      id: 1,
       image: "https://images.ladbible.com/resize?type=jpeg&quality=70&width=1200&fit=contain&gravity=auto&url=https://images.ladbiblegroup.com/v3/assets/blt949ea8e16e463049/bltfdd999eab07cb6b1/650180e7ceedbe512bb30b2f/alien-bodies-1000-years-old-mexico.png",
       title: "Mexico legislators hold hearing on existence of UFOs, shown ‘alien’ bodies",
       content: `
@@ -15,6 +16,7 @@ export const alienNews = [
       country: "USA"
     },
     {
+      id: 2,
       image: "https://cdn.images.express.co.uk/img/dynamic/151/590x/NASA-alien-life-news-habitable-planet-exoplanet-discovery-957795.jpg?r=1686998680160",
       title: "NASA releases UFO report, appoints unidentified object research director",
       content: `
@@ -30,6 +32,7 @@ export const alienNews = [
       country: "Brazil"
     },
     {
+      id: 3,
         image: "https://image.ondacero.es/clipping/cmsimages01/2015/02/02/CB413082-4559-4D28-8AE7-A8070055B6DD/69.jpg?crop=682,384,x0,y8&width=1280&height=720&optimize=low&format=webply",
         title: "Mysterious Crop Circles Appear Overnight in UK",
         content: `
@@ -45,6 +48,7 @@ export const alienNews = [
         country: "UK"
       },
       {
+        id: 4,
         image: "https://thedaily.case.edu/wp-content/uploads/2023/07/astronaut-standing-on-the-moon.jpg",
         title: "Astronauts Report Strange Lights on Moon's Dark Side",
         content: `
@@ -60,6 +64,7 @@ export const alienNews = [
         country: "Germany"
       },
       {
+        id: 5,
         image: "https://i.ndtvimg.com/i/2015-06/mars-pyramid_650x400_61434975068.jpg",
         title: "Pyramid-like Structures Discovered on Mars?",
         content: `
@@ -75,6 +80,7 @@ export const alienNews = [
         country: "India"
       },
       {
+        id: 6,
         image: "https://i.dailymail.co.uk/i/pix/2009/06/03/article-1190481-0531795D000005DC-401_634x419.jpg",
         title: "Unusual Lights in Australian Outback Spark UFO Theories",
         content: `
@@ -90,6 +96,7 @@ export const alienNews = [
         country: "Australia"
       },
       {
+        id: 7,
         image: "https://previews.agefotostock.com/previewimage/medibigoff/1369ba6398541563bd04a15ff35275ba/zm4-2008919.jpg",
         title: "Ancient Alien Artifacts or Earthly Relics? Debate Sparks in Egypt",
         content: `
@@ -105,6 +112,7 @@ export const alienNews = [
         country: "Egypt"
       },
       {
+        id: 8,
         image: "https://ichef.bbci.co.uk/news/976/cpsprodpb/2D3F/production/_111138511_codename_rendlesham1_chillfactorfilms.jpg",
         title: "Canadian Forests: A New UFO Hotspot?",
         content: `
