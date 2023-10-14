@@ -13,18 +13,15 @@ const SingularNewsView = () => {
   return (
     <div className="singular-news-view">
       <Header title={`Detailed News Number ${id}`}/>
-      {alien && 
-        <AlienCard 
-          id={alien.id}
-          image={alien.image} 
-          title={alien.title} 
-          content={alien.content}
-          author={alien.author} 
-          location={alien.country} 
-          size="large"
-          showButton={false}
-        />
-      }
+      <AlienCard 
+        image={alien.image} 
+        title={alien.title} 
+        content={alien.content}
+        author={alien.author} 
+        location={alien.country} 
+        size="large"
+        showButton={false}
+      />
     </div>
   );
 };

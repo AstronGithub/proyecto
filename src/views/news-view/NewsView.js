@@ -26,8 +26,8 @@ const NewsView = () => {
           author={alien.author} 
           location={alien.country} 
           className="alien-card"
-          onClick={() => navigate(`/singularNewsView/${alien.id}`)}
-          showButton  
+          onAlienButtonClick={() => navigate(`/singularNewsView/${alien.id}`)}
+          showButton={true}
         />
       );
     });
