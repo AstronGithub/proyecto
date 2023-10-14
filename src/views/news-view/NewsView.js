@@ -26,7 +26,7 @@ const NewsView = () => {
           author={alien.author} 
           location={alien.country} 
           className="alien-card"
-          onAlienButtonClick={() => navigate(`/singularNewsView/${alien.id}`)}
+          onClick={() => navigate(`/singularNewsView/${alien.id}`)}
           showButton={true}
         />
       );
